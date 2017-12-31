@@ -1,0 +1,5 @@
+FROM        redis:4.0.6
+MAINTAINER  dsanderscanada@gmail.com
+RUN         apt-get update && apt-get install -y iputils-ping
+CMD         ["bash"]
+EXPOSE      6379
